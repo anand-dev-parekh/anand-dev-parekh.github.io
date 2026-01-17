@@ -1,8 +1,16 @@
 ---
-layout: default
-title: About
+layout: home
+title: Home
 ---
 
-Hi, I’m **Anand Dev Parekh**
+<div style="max-width: 42rem; margin: 0 auto; padding: 1.5rem 0;">
+  <p style="margin: 0 0 0.75rem 0;">
+    <a href="{{ site.baseurl }}/posts/">Posts</a>
+    &nbsp;·&nbsp;
+    <a href="{{ site.baseurl }}/about/">About</a>
+  </p>
 
-This blog supports LaTeX, like $a^2 + b^2 = c^2$.
+  <p style="margin: 0; color: #666;">
+    {{ site.description }}
+  </p>
+</div>

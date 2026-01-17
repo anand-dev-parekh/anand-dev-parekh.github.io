@@ -1,0 +1,49 @@
+---
+---
+
+@import "minima";
+
+/*
+  Very small, very minimal overrides.
+  Edit the palette below.
+*/
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --link: #0055cc;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+a, a:visited {
+  color: var(--link);
+}
+
+.site-title, .site-title:visited,
+.site-nav .page-link {
+  color: var(--text);
+}
+
+.post-meta, .footer-col-wrapper, .rss-subscribe {
+  color: var(--muted);
+}
+
+/* Make everything feel a bit more "spare" */
+.wrapper {
+  max-width: 42rem;
+}
+
+/* Optional: remove the big bottom border under the header */
+.site-header {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* Optional: reduce spacing a touch */
+.page-content {
+  padding: 1.5rem 0;
+}

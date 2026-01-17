@@ -1,7 +1,26 @@
-title: Anand Parekh
-description: ""
-theme: null
+title: "Anand Dev Parekh"
+description: "Personal website for Anand Dev Parekh. I hopefully will update this with some notes/posts!"
+
+theme: minima
+
+# If deploying as a PROJECT page (repo like username/reponame), set baseurl: "/reponame"
+# If deploying as a USER page (repo like username.github.io), leave baseurl empty.
+url: "" # optional; can be left blank
+baseurl: "" # IMPORTANT: change if using a project page
+
+minima:
+  skin: classic
+
+# Navigation in the header
+header_pages:
+  - posts.md
+  - about.md
+
+# Optional: show excerpts on lists
+show_excerpts: true
+
+# Markdown engine (default is fine)
 markdown: kramdown
-kramdown:
-  input: GFM
-permalink: /:year/:month/:day/:title/
+
+# MathJax toggle (used by _includes/head.html)
+mathjax: true
