@@ -1,16 +1,10 @@
 ---
-layout: home
-title: Home
+layout: page
+title: About
 ---
 
-<div style="max-width: 42rem; margin: 0 auto; padding: 1.5rem 0;">
-  <p style="margin: 0 0 0.75rem 0;">
-    <a href="{{ site.baseurl }}/posts/">Posts</a>
-    &nbsp;·&nbsp;
-    <a href="{{ site.baseurl }}/about/">About</a>
-  </p>
+Write a short bio here.
 
-  <p style="margin: 0; color: #666;">
-    {{ site.description }}
-  </p>
-</div>
+- What you’re writing about
+- What you’re working on
+- How to contact you (optional)

@@ -14,7 +14,6 @@ minima:
 # Navigation in the header
 header_pages:
   - posts.md
-  - about.md
 
 # Optional: show excerpts on lists
 show_excerpts: true
