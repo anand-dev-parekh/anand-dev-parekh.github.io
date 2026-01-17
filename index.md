@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /
 ---
 
 Write a short bio here.
