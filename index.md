@@ -4,4 +4,34 @@ title: About
 permalink: /
 ---
 
-Name: Anand Dev Parekh
+### Name
+
+| | |
+|---|---|
+| Anand Dev Parekh | |
+
+---
+
+### Interests
+
+| | |
+|---|---|
+| Offline Data | |
+| Algorithms | |
+| Writing and explanation | |
+
+---
+
+### Education
+
+| Degree | Details |
+|------|--------|
+| B.S. | Computer Science | Washington University in St Louis | Completed May 2025 |
+| M.S. | Computer Science | Washington University in St Louis | Expected May 2026 |
+
+---
+
+### Experience
+
+| Area | Notes |
+|------|------|
