@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Posts
+title: About
 ---
 
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) <span class="meta">({{ post.date | date: "%Y-%m-%d" }})</span>
-{% endfor %}
+Hi, I’m **Anand Dev Parekh**
+
+This blog supports LaTeX, like $a^2 + b^2 = c^2$.

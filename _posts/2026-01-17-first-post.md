@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Post"
+title: "My first ever post!"
 ---
 
 Inline math: $E=mc^2$.
