@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title }} · {{ site.title }}</title>
+
+    <!-- very minimal styling -->
+    <style>
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2.5rem auto; max-width: 42rem; padding: 0 1rem; line-height: 1.6; }
+      header { margin-bottom: 2rem; }
+      nav a { margin-right: 1rem; }
+      a { color: inherit; }
+      h1, h2 { line-height: 1.2; }
+      hr { border: 0; border-top: 1px solid #ddd; margin: 2rem 0; }
+      .meta { color: #666; font-size: 0.95rem; }
+    </style>
+
+    <!-- MathJax for LaTeX -->
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\(', '\)']], displayMath: [['$$','$$'], ['\[','\]']] },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/">Posts</a>
+        <a href="/about/">About</a>
+      </nav>
+      <h1 style="margin: .5rem 0 0;">
+        <a href="/" style="text-decoration:none;">{{ site.title }}</a>
+      </h1>
+    </header>
+
+    {{ content }}
+  </body>
+</html>
