@@ -25,3 +25,9 @@ permalink: /
 
 | Company | Role | Start Date | End Date |
 |------|--------|
+| Mastercard | Engineering | August 2025 | present |
+| Mastercard | Software Engineer Intern | June 2024 | August 2024 |
+| Multimodal Vision Research Labratory | Undergraduate Research Assistant | September 2023 | May 2024 |
+| Bascom Hunter | Software Engineer Intern | May 2023 | August 2023 |
+| Washington University McKelvey School Of Engineering | Teaching Assistant | January 2023 | May 2025 |
+| 7D Imaging | Software Engineer Intern | August 2022 | January 2023 |
