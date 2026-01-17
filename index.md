@@ -6,7 +6,6 @@ permalink: /
 
 ### Name
 
-| | |
 |---|---|
 | Anand Dev Parekh | |
 
@@ -14,11 +13,10 @@ permalink: /
 
 ### Interests
 
-| | |
 |---|---|
-| Offline Data | |
-| Algorithms | |
-| Writing and explanation | |
+| Offline Data |
+| Algorithms |
+| Writing and explanation |
 
 ---
 
