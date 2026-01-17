@@ -4,19 +4,9 @@ title: About
 permalink: /
 ---
 
-### Name
 
-|---|---|
-| Anand Dev Parekh | |
-
----
-
-### Interests
-
-|---|---|
-| Offline Data |
-| Algorithms |
-| Writing and explanation |
+**Name**: Anand Dev Parekh
+**Interests/Learning**: Offline Data, Data-intensive systems, Distributed Systems, Algorithms, Storage Systems. 
 
 ---
 
