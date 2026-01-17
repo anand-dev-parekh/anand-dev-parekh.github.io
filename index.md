@@ -31,3 +31,11 @@ permalink: /
 | Bascom Hunter | Software Engineer Intern | May 2023 | August 2023 |
 | Washington University McKelvey School Of Engineering | Teaching Assistant | January 2023 | May 2025 |
 | 7D Imaging | Software Engineer Intern | August 2022 | January 2023 |
+
+---
+
+### Connect with Me
+
+- [LinkedIn](https://www.linkedin.com/in/anand-parekh-6221a623a/)
+- [GitHub](https://github.com/anand-dev-parekh)
+- [YouTube](https://www.youtube.com/@anandp2771)
