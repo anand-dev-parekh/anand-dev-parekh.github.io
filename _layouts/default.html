@@ -21,7 +21,7 @@
     <span class="mono">{{ site.author }} · {{ site.location }}</span>
     <span class="links">
       {%- for s in site.social %}<a href="{{ s.url }}" rel="me noopener">{{ s.name }}</a>{% endfor -%}
-      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      <a href="{{ '/rss/' | relative_url }}">RSS</a>
     </span>
   </div>
 </footer>
