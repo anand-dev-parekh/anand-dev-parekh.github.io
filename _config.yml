@@ -1,6 +1,7 @@
 title: "Anand Dev Parekh"
-description: "Systems and infrastructure engineer in St. Louis. Notes on distributed systems, storage, and data-intensive software."
+description: "Software engineer at Mastercard in St. Louis, working on distributed systems, infrastructure, and the platforms other engineers build on."
 author: "Anand Dev Parekh"
+location: "St. Louis"
 
 url: "https://anand-dev-parekh.github.io"
 baseurl: ""
@@ -22,6 +23,7 @@ social:
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-sitemap
 
 markdown: kramdown
 show_excerpts: true

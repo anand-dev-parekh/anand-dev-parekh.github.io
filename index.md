@@ -1,7 +1,17 @@
 ---
 layout: home
-title: About
+# Matching site.title makes jekyll-seo-tag render "Anand Dev Parekh | Software Engineer".
+title: Anand Dev Parekh
 permalink: /
+# Tells search engines this page is about a person, and which profiles are theirs.
+seo:
+  type: Person
+  name: Anand Dev Parekh
+  links:
+    - https://github.com/anand-dev-parekh
+    - https://www.linkedin.com/in/anand-parekh-6221a623a/
+    - https://www.youtube.com/@anandp2771
+    - https://x.com/AnandPa76763669
 ---
 
 Hey! Thanks for checking out my website!
