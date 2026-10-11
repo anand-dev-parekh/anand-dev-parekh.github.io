@@ -1,0 +1,68 @@
+# Roles, most recent first. Plain reverse-chronological — no framing device.
+#
+#   role    : your title
+#   org     : company / lab / school
+#   dates   : free text, shown right-aligned
+#   place   : optional location
+#   current : true draws the "now" dot
+#   body    : one or two sentences
+#   logo    : path under /assets/img/logos/. Safe to name a file that isn't
+#             there yet — the row falls back to the monogram until it is.
+#   mark    : the monogram used until a logo lands
+#   plate   : "light" for dark-ink logos that need a light chip behind them
+#
+# NOTE: the earlier roles are still one thin line each — I only wrote what your
+# old index.md stated. A concrete sentence about what you built would help most.
+
+- role: "Software Engineer"
+  org: "Mastercard"
+  dates: "Aug 2025 — present"
+  place: "St. Louis"
+  current: true
+  logo: "/assets/img/logos/mastercard.svg"
+  mark: "MC"
+  body: >
+      Working on the Infrastructure Design Engineering Automation team (IDEA).
+
+- role: "Software Engineer Intern"
+  org: "Mastercard"
+  dates: "Jun 2024 — Aug 2024"
+  place: "St. Louis"
+  logo: "/assets/img/logos/mastercard.svg"
+  mark: "MC"
+  body: >
+    Built backend services and automation tools for Mastercard's global infrastructure.
+
+- role: "Undergraduate Research Assistant"
+  org: "Multimodal Vision Research Laboratory"
+  dates: "Sep 2023 — May 2024"
+  place: "WashU"
+  logo: "/assets/img/logos/washu.svg"
+  mark: "MV"
+  body: >
+    Research assistant in the Multimodal Vision Research Laboratory.
+
+- role: "Software Engineer Intern"
+  org: "Bascom Hunter"
+  dates: "May 2023 — Aug 2023"
+  logo: "/assets/img/logos/bascom-hunter.svg"
+  mark: "BH"
+  body: >
+    Built full-stack applications and improved database architecture for engineering+manufacturing workflows.
+
+- role: "Teaching Assistant"
+  org: "McKelvey School of Engineering"
+  dates: "Jan 2023 — May 2025"
+  place: "WashU"
+  logo: "/assets/img/logos/washu.svg"
+  mark: "WU"
+  body: >
+    Two and a half years TA'ing in the engineering school (Discrete Math).
+
+- role: "Software Engineer Intern"
+  org: "7D Imaging"
+  dates: "Aug 2022 — Jan 2023"
+  logo: "/assets/img/logos/7d-imaging.svg"
+  mark: "7D"
+  body: >
+    Built full-stack features for medical imaging software app.

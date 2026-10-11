@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="prose">
+  <p class="sec-label"><a href="{{ '/posts/' | relative_url }}">← writing</a></p>
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="post-meta mono">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+  </p>
+  {{ content }}
+</article>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+<body>
+
+<nav class="site-nav">
+  <div class="in">
+    <a class="brand" href="{{ '/' | relative_url }}">anand</a>
+    <a href="{{ '/#experience' | relative_url }}">experience</a>
+    <a href="{{ '/posts/' | relative_url }}">writing</a>
+    <a href="{{ '/raft/' | relative_url }}">cluster</a>
+  </div>
+</nav>
+
+<main class="wrap" id="page" data-page>
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="in">
+    <span class="mono">{{ site.author }} · {{ site.location }}</span>
+    <span class="links">
+      {%- for s in site.social %}<a href="{{ s.url }}" rel="me noopener">{{ s.name }}</a>{% endfor -%}
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </span>
+  </div>
+</footer>
+
+<script type="module" src="{{ '/assets/js/site/boot.js' | relative_url }}"></script>
+</body>
+</html>

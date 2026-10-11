@@ -1,22 +1,21 @@
 ---
 layout: page
-title: Posts
+title: Writing
 permalink: /posts/
 ---
 
 {%- if site.posts.size == 0 -%}
 No posts yet.
 {%- else -%}
-<ul class="post-list">
+<div class="wlist">
   {%- for post in site.posts -%}
-    <li>
-      <h3 style="margin: 0;">
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h3>
-      {%- if site.show_excerpts -%}
-        <p style="margin: 0.25rem 0 1rem 0;">{{ post.excerpt }}</p>
-      {%- endif -%}
-    </li>
+  <a class="wrow" href="{{ post.url | relative_url }}">
+    <span>
+      <span class="wt">{{ post.title | escape }}</span>
+      {%- if site.show_excerpts and post.excerpt %}<br><span class="wd">{{ post.excerpt | strip_html | truncate: 110 }}</span>{% endif -%}
+    </span>
+    <span class="wm mono"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></span>
+  </a>
   {%- endfor -%}
-</ul>
+</div>
 {%- endif -%}

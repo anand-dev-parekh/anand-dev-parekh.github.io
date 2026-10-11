@@ -1,26 +1,42 @@
-title: "Anand Dev Parekh -- Notes"
-description: "Personal website for Anand Dev Parekh. I hopefully will update this with some notes/posts!"
+title: "Anand Dev Parekh"
+description: "Systems and infrastructure engineer in St. Louis. Notes on distributed systems, storage, and data-intensive software."
 author: "Anand Dev Parekh"
 
-theme: minima
+url: "https://anand-dev-parekh.github.io"
+baseurl: ""
 
-# If deploying as a PROJECT page (repo like username/reponame), set baseurl: "/reponame"
-# If deploying as a USER page (repo like username.github.io), leave baseurl empty.
-url: "" # optional; can be left blank
-baseurl: "" # IMPORTANT: change if using a project page
+# --- identity used by the hero + footer -------------------------------------
+tagline: "Software Engineer"
 
-minima:
-  skin: classic
+social:
+  - name: GitHub
+    url: https://github.com/anand-dev-parekh
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/anand-parekh-6221a623a/
+  - name: YouTube
+    url: https://www.youtube.com/@anandp2771
+  - name: Twitter
+    url: https://x.com/AnandPa76763669
 
-# Navigation in the header
-header_pages:
-  - posts.md
+# --- build ------------------------------------------------------------------
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
 
-# Optional: show excerpts on lists
-show_excerpts: true
-
-# Markdown engine (default is fine)
 markdown: kramdown
-
-# MathJax toggle (used by _includes/head.html)
+show_excerpts: true
 mathjax: true
+
+permalink: /posts/:year/:month/:day/:title/
+
+exclude:
+  - assets/img/logos/README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .DS_Store
+  - package.json
+  - package-lock.json
+  - node_modules
+  - test

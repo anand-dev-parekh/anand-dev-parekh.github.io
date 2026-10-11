@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<section class="hero" id="about">
+  <h1>{{ site.author }}</h1>
+  <p class="tag">{{ site.tagline }}</p>
+
+  <div class="bio">{{ content }}</div>
+
+</section>
+
+<!-- 
+<section id="projects">
+  <h2 class="sec-label">Projects</h2>
+  <div class="plist">
+    {%- for p in site.data.projects %}
+    <details class="prow" data-project="{{ p.key }}">
+      <summary class="phead">
+        <span class="pkey mono">{{ p.key }}</span>
+        <span class="pdesc">{{ p.desc }}</span>
+        <span class="pstack mono">{{ p.stack }}</span>
+      </summary>
+      <div class="pbody">
+        <p class="inner">{{ p.body }}</p>
+        {%- if p.repo %}<p class="inner"><a class="mono" href="{{ p.repo }}" rel="noopener">source →</a></p>{% endif -%}
+      </div>
+    </details>
+    {%- endfor %}
+  </div>
+</section>
+-->
+
+<section id="experience">
+  <h2 class="sec-label">Experience</h2>
+  <div class="roles">
+    {%- for r in site.data.experience %}
+    <div class="role{% if r.current %} is-current{% endif %}">
+      {% include org-logo.html org=r.org logo=r.logo mark=r.mark plate=r.plate %}
+      <p class="role-head">
+        <span class="role-title">{{ r.role }}</span>
+        <span class="role-org">{{ r.org }}</span>
+      </p>
+      <p class="role-dates mono">{{ r.dates }}{% if r.place %} · {{ r.place }}{% endif %}</p>
+      <p class="role-body">{{ r.body }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+
+  <h2 class="sec-label edu-label">Education</h2>
+  <div class="roles">
+    {%- for e in site.data.education %}
+    <div class="role">
+      {% include org-logo.html org=e.org logo=e.logo mark=e.mark plate=e.plate %}
+      <p class="role-head">
+        <span class="role-title">{{ e.degree }}</span>
+        <span class="role-org">{{ e.org }}</span>
+      </p>
+      <p class="role-dates mono">{{ e.dates }}{% if e.note %} · {{ e.note }}{% endif %}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section id="writing">
+  <h2 class="sec-label">Writing</h2>
+  {%- if site.posts.size == 0 %}
+  <p class="empty mono">No posts yet.</p>
+  {%- else %}
+  <div class="wlist">
+    {%- for post in site.posts limit: 5 %}
+    <a class="wrow" href="{{ post.url | relative_url }}">
+      <span>
+        <span class="wt">{{ post.title | escape }}</span>
+        {%- if site.show_excerpts and post.excerpt %}<br><span class="wd">{{ post.excerpt | strip_html | truncate: 110 }}</span>{% endif -%}
+      </span>
+      <span class="wm mono"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time></span>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- if site.posts.size > 5 %}<p class="more mono"><a href="{{ '/posts/' | relative_url }}">all posts →</a></p>{% endif -%}
+  {%- endif %}
+</section>

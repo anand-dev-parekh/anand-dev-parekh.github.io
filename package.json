@@ -1,0 +1,11 @@
+{
+  "name": "anand-site",
+  "private": true,
+  "type": "module",
+  "description": "Marks assets/js/**/*.js as ES modules so the Raft core runs unchanged in Node for tests. Not part of the built site.",
+  "scripts": {
+    "dev": "PATH=\"$(brew --prefix ruby 2>/dev/null)/bin:$PATH\" bundle exec jekyll serve",
+    "build": "PATH=\"$(brew --prefix ruby 2>/dev/null)/bin:$PATH\" JEKYLL_ENV=production bundle exec jekyll build",
+    "test": "node --test test/"
+  }
+}

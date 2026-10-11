@@ -1,0 +1,14 @@
+# Same logo/mark/plate fields as experience.yml.
+
+- degree: "M.S. Computer Science"
+  org: "Washington University in St. Louis"
+  dates: "Complete May 2026"
+  note: "alongside full-time work"
+  logo: "/assets/img/logos/washu.svg"
+  mark: "WU"
+
+- degree: "B.S. Computer Science"
+  org: "Washington University in St. Louis"
+  dates: "Completed May 2025"
+  logo: "/assets/img/logos/washu.svg"
+  mark: "WU"

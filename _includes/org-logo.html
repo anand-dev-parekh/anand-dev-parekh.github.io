@@ -1,0 +1,30 @@
+{%- comment -%}
+  The org chip next to a role or degree.
+
+  Renders the image at include.logo if that file actually exists in the built
+  site, and otherwise falls back to a monogram. That check is the point: the
+  YAML can name a logo before the file is there, and the row stays intact
+  instead of showing a broken image. Drop the file in and it appears.
+
+    org   : org name, used only for the monogram fallback
+    logo  : site-root-relative path, e.g. /assets/img/logos/mastercard.svg
+    mark  : 1-2 char monogram; first letter of org if omitted
+    plate : "light" backs the logo with a light chip, for dark-ink marks that
+            would otherwise disappear against the page
+
+  Both branches are aria-hidden — the org name sits right next to this, and a
+  screen reader reading it twice is worse than not seeing the logo.
+{%- endcomment -%}
+{%- assign logo_ok = false -%}
+{%- if include.logo and include.logo != "" -%}
+  {%- for f in site.static_files -%}
+    {%- if f.path == include.logo -%}{%- assign logo_ok = true -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+<span class="role-logo"{% if include.plate %} data-plate="{{ include.plate }}"{% endif %} aria-hidden="true">
+  {%- if logo_ok -%}
+  <img src="{{ include.logo | relative_url }}" alt="" loading="lazy" decoding="async">
+  {%- else -%}
+  <span class="mark">{% if include.mark %}{{ include.mark }}{% else %}{{ include.org | slice: 0 }}{% endif %}</span>
+  {%- endif -%}
+</span>
