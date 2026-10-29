@@ -45,7 +45,6 @@ If these fail, consensus is broken, not the styling.
 
 | What | Where |
 |---|---|
-| Projects | `_data/projects.yml` |
 | Roles | `_data/experience.yml` |
 | Degrees | `_data/education.yml` |
 | Bio / hero copy | `index.md` |
